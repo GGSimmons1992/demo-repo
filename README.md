@@ -1,2 +1,2 @@
 # demo-repo
-mvc project
+Services repo for training.
