@@ -1,6 +1,4 @@
 # demo-repo
 Services repo for training.
 
-
-
-Master new change
+patch2readme
