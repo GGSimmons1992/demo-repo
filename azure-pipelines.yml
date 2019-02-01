@@ -10,11 +10,12 @@ trigger:
     - master
 
 pr:
-    -'azure-pipelines'
-    -'\d{9,}-*'
+    - 'azure-pipelines'
 
 steps:
     - script:'dotnet restore ./DemoRepo/DemoRepo.sln'
+    - script:'dotnet build ./DemoRepo/DemoRepo.sln'
+
 #- task: ArchiveFiles@2
 #  inputs:
 #    rootFolderOrFile: '$(build.sourcesDirectory)'
