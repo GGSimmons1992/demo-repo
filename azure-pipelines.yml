@@ -10,7 +10,7 @@ trigger:
     - master
 
 pr:
-    -'azure-pipelines'
+    - 'azure-pipelines'
 
 steps:
     - script:'dotnet restore ./DemoRepo/DemoRepo.sln'
