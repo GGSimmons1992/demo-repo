@@ -17,6 +17,7 @@ steps:
     - script:'dotnet restore ./DemoRepo/DemoRepo.sln'
     - script:'dotnet build ./DemoRepo/DemoRepo.sln'
 
+
 #- task: ArchiveFiles@2
 #  inputs:
 #    rootFolderOrFile: '$(build.sourcesDirectory)'
