@@ -3,15 +3,15 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+pool:
+    vmImage: 'Ubuntu-16.04'
+
 trigger:
     - master
 
 pr:
     -'azure-pipelines'
     -'\d{9,}-*'
-
-pool:
-    vmImage: 'Ubuntu-16.04'
 
 steps:
     script:'dotnet restore ./DemoRepo/DemoRepo.sln'
